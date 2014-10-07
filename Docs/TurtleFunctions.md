@@ -4,9 +4,9 @@
 This document describes the feasibility of each turtle-python function 
 
 ###Legend
-✔ - Doable, Code should/can be created in Parallel System
-○ - Already Implemented, Code that exists doesn't need to be re-implemented
-✘ - Not-Doable, Hardware limitations prevent a parallel implementation
+✔ - Doable, Code should/can be created in Parallel System  
+○ - Already Implemented, Code that exists doesn't need to be re-implemented  
+✘ - Not-Doable, Hardware limitations prevent a parallel implementation  
 
 
 ##✔ back
