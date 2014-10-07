@@ -3,6 +3,11 @@
 ###This Document
 This document describes the feasibility of each turtle-python function 
 
+###Legend
+✔ - Doable, Code should/can be created in Parallel System
+○ - Already Implemented, Code that exists doesn't need to be re-implemented
+✘ - Not-Doable, Hardware limitations prevent a parallel implementation
+
 
 ##✔ back
 Basic Movement.
@@ -10,7 +15,7 @@ Basic Movement.
 ##✘ begin_fill
 Requires virtual space.
 
-##begin_poly - Already Implemented
+##○ begin_poly
 Start recording the vertices of a polygon. Doesnt change canvas.
 
 ##✔ circle
@@ -52,7 +57,7 @@ Pen down
 ##✘ end_fill
 Ends a fill (Not doing fill)
 
-##end_poly - Already Implemented
+##○ end_poly
 Ends a poly definition
 
 ##✔ fd
@@ -64,13 +69,13 @@ not doing fill
 ##✘ filling
 Not doing fill
 
-##get_poly - Already Implemented
+##○ get_poly
 Poly Stuff
 
-##get_shapepoly - Already Implemented
+##○ get_shapepoly
 Poly Stuff
 
-##getpen - Already Implemented
+##○ getpen
 Returns the turtle instance (Could be useful when you you dont want a clone).
 
 ##✘ getscreen
@@ -79,7 +84,7 @@ No canvas instance
 ##✘ goto
 Only doing relative
 
-##heading - Already Implemented
+##○ heading
 Returns current heading
 
 ##✘ hideturtle
@@ -88,7 +93,7 @@ Can't hide the Pi
 ##✘ home
 Only doing relative
 
-##isdown - Already Implemented
+##○ isdown
 Returns pen state
 
 ##✘ isvisible
