@@ -1,3 +1,6 @@
+# Python file to print all the existing Turtle Functions
+# Does not include duplicates
+
 import turtle
 t = turtle.Turtle()
 f = open("Turtle.txt",'w')

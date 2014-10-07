@@ -1,63 +1,67 @@
-Functions from the turtle library:
+#Turtle Parallel Functionallity
 
-##back - Doable
+###This Document
+This document describes the feasibility of each turtle-python function 
+
+
+##✔ back
 Basic Movement.
 
-##begin_fill - Not Doable
+##✘ begin_fill
 Requires virtual space.
 
 ##begin_poly - Already Implemented
 Start recording the vertices of a polygon. Doesnt change canvas.
 
-##circle - Doable
+##✔ circle
 Basic Movement.
 
-##clear - Not Doable
+##✘ clear
 Clears the canvas (Can't Erase)
 
-##clearstamp - Not Doable
+##✘ clearstamp
 Removes a previous stamp by ID (Can't Erase)
 
-##clearstamps - Not Doable
+##✘ clearstamps
 Removes all previous stamps (Can't Erase)
 
-##clone - Not Doable
+##✘ clone
 Makes another instance (Only have one robot per instance)
 
-##color - Not Doable
+##✘ color
 Changes pen color (can change manually)
 
-##currentLine - Not Doable
+##✘ currentLine
 Returns the current line absolute positions (Only doing relative)
 
-##currentLineItem - Not Doable
+##✘ currentLineItem
 Returns a variable (Not needed)
 
-##degrees - Doable
+##✔ degrees
 Changes the number of degrees in a full rotation
 
-##distance - Not Doable
+##✘ distance
 Measures between the turtle and another location (Only doing relative)
 
-##dot - Not Doable
+##✘ dot
 Filled in circle (Not doing fill)
 
-##down - Doable
+##✔ down
 Pen down
 
-##end_fill - Not Doable
+##✘ end_fill
 Ends a fill (Not doing fill)
 
 ##end_poly - Already Implemented
 Ends a poly definition
 
-##fd - Doable
+##✔ fd
 Basic Movement
 
-##fillcolor - Not Doable
+##✘ fillcolor
 not doing fill
 
-##filling - Not Doable
+##✘ filling
 Not doing fill
 
 ##get_poly - Already Implemented
@@ -69,132 +73,132 @@ Poly Stuff
 ##getpen - Already Implemented
 Returns the turtle instance (Could be useful when you you dont want a clone).
 
-##getscreen - Not Doable
+##✘ getscreen
 No canvas instance
 
-##goto - Not Doable
+##✘ goto
 Only doing relative
 
 ##heading - Already Implemented
 Returns current heading
 
-##hideturtle - Not Doable
+##✘ hideturtle
 Can't hide the Pi
 
-##home - Not Doable
+##✘ home
 Only doing relative
 
 ##isdown - Already Implemented
 Returns pen state
 
-##isvisible - Not Doable
+##✘ isvisible
 Not Hiding (Always return true)
 
-##left - Doable
+##✔ left
 Basic Movement
 
-##onclick - Not Doable
+##✘ onclick
 Requires screen
 
-##ondrag - Not Doable
+##✘ ondrag
 Requires screen
 
-##onrelease - Not Doable
+##✘ onrelease
 Requires Screen
 
-##pen - Not Doable
+##✘ pen
 Not changing the pen
 
 
-##pencolor - Not Doable
+##✘ pencolor
 Not changing the pen
 
-##pensize - Not Doable
+##✘ pensize
 Not changing the pen
 
-##penup - Doable
+##✔ penup
 Lifts pen
 
-##pos - Not Doable
+##✘ pos
 Only relative
 
-##radians - Doable
+##✔ radians
 Changes angles to radians
 
-##reset - Not Doable
+##✘ reset
 Can't erase and only relative
 
-##resizemode - Not Doable
+##✘ resizemode
 
 
-##right - Doable
+##✔ right
 Basic Movement
 
-##screen - Not Doable
+##✘ screen
 No Screen
 
-##seth - ?
+##? seth
 ?
 
-##settiltangle - ?
+##? settiltangle
 ?
 
-##setundobuffer - ?
+##? setundobuffer
 ?
 
-##setx - Not Doable
+##✘ setx
 Only Relative
 
-##sety - Not Doable
+##✘ sety 
 Only Relative
 
-##shape - ?
+##? shape 
 ?
 
-##shapesize - ?
+##? shapesize
 ?
 
-##shapetransform - ?
+##? shapetransform
 ?
 
-##shearfactor - ?
+##? shearfactor
 ?
 
 ##showturtle Not Doable
 Not hiding so it is always shown
 
-##speed - Doable
+##✔ speed
 Changes the turtle speed
 
-##stamp - Doable
+##✔ stamp
 Marks where the current turtle is.
 
-##tilt - ?
+##? tilt
 ?
 
-##tiltangle - ?
+##? tiltangle
 ?
 
-##towards - Not Doable
+##✘ towards 
 Only doing relative
 
-##turtle - ?
+##? turtle
 ?
 
-##undo - Not Doable
+##✘ undo 
 Can't erase
 
-##undobuffer - ?
+##? undobuffer
 ?
 
-##undobufferentries - ?
+##? undobufferentries 
 ?
 
 ##write - Doable?
 Writes a given string
 
-##xcor - Not Doable
+##✘ xcor 
 Only doing Relative
 
-##ycor - Not Doable
+##✘ ycor 
 Only doing Relative
