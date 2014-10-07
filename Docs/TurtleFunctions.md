@@ -169,7 +169,7 @@ Only Relative
 ##? shearfactor
 ?
 
-##showturtle Not Doable
+##✘ showturtle
 Not hiding so it is always shown
 
 ##✔ speed
@@ -199,7 +199,7 @@ Can't erase
 ##? undobufferentries 
 ?
 
-##write - Doable?
+##? write
 Writes a given string
 
 ##✘ xcor 
