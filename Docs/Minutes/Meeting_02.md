@@ -1,4 +1,4 @@
-# Meeting Number 01 - 11/09/14
+# Meeting Number 02 - 11/09/14
 
 ## Where we are
 
