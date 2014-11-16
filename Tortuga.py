@@ -5,173 +5,295 @@ robot = RaspiRobot()
 def Tortuga():
   return robot
 
+def addshape():
+  #Alias register_shape | addshape
+  pass
+
 def back():
+  #Alias back | backward | bk
+  pass
+
+def backward():
+  #Alias back | backward | bk
   pass
 
 def begin_fill():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def begin_poly():
-  // Already implemented
+  # Already implemented
+  pass
+
+def bk():
+  #Alias back | backward | bk
+  pass
+
+def bye():
   pass
 
 def circle():
   pass
 
 def clear():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def clearstamps():
-  // Not implemented
+  # Will not be implementing.
   pass
   
 def clone():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def color():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def colormode():
   pass
 
 def currentLine():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def currentLineItem():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def degrees():
   pass
 
 def distance():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def done():
+  #Alias mainloop | done
   pass
 
 def dot():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def down():
+  #Alias pendown | pd | down
   pass
 
 def end_fill():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def end_poly():
-  // Already implemented
+  # Already implemented
+  pass
+
+def exitonclick():
   pass
 
 def fd():
+  #Alias forward | fd
   pass
 
 def forward():
+  #Alias forward | fd
   pass
+
+def fill():
+  #Will not be implementing.
 
 def fillcolor():
-  // Not implemented
+  # Will not be implementing.
   pass
 
-def filling():
-  // Not implemented
+def Filling():
+  # Will not be implementing.
   pass
 
 def get_poly():
-  // Already implemented
+  # Already implemented
   pass
 
 def get_shapepoly():
-  // Already implmented
+  # Already implmented
+  pass
+
+def getcanvas():
   pass
 
 def getpen():
-  // Already implemented
+  # Already implemented
+  #Alias getturtle | getpen
   pass
 
 def getscreen():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def getshapes():
+  pass
+
+def getturtle():
+  # Already implemented
+  #Alias getturtle | getpen
   pass
 
 def goto():
-  // Not implemented
+  # Will not be implementing.
+  #Alias goto | setpos | setposition
   pass
 
 def heading():
-  // Already implemented
+  # Already implemented
   pass
 
 def hideturtle():
-  // Not implemented
+  # Will not be implementing.
+  #Alias hideturtle | ht
   pass
 
 def home():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def ht():
+  # Will not be implementing.
+  #Alias hideturtle | ht
   pass
 
 def isdown():
-  // Already implemented
+  # Already implemented
   pass
 
 def isvisible():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def left():
+  #Alias left | lt
+  pass
+
+def listen():
+  pass
+
+def lt():
+  #Alias left | lt
+  pass
+
+def mainloop():
+  #Alias mainloop | done
+  pass
+
+def mode():
   pass
 
 def onclick():
-  // Not implemented
+  # Will not be implementing.
+  #Alias onclick | onscreenclick
   pass
 
 def ondrag():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def onkey():
   pass
 
 def onrelease():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def onscreenclick():
+  # Will not be implementing.
+  #Alias onclick | onscreenclick
+  pass
+
+def ontimer():
+  pass
+
+def  pd():
+  #Alias pendown | pd | down
   pass
 
 def pen():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def pencolor():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def pendown():
+  #Alias pendown | pd | down
   pass
 
 def pensize():
-  // Not implemented
+  # Will not be implementing.
+  #Alias pensize | width
   pass
 
 def penup():
+  #Alias penup | pu | up
   pass
 
 def pos():
-  // Not implemented
+  # Will not be implementing.
+  #Alias position | pos
+  pass
+
+def position():
+  # Will not be implementing.
+  #Alias position | pos
+  pass
+
+def pu():
+  #Alias penup | pu | up
   pass
 
 def radians():
   pass
 
+def register_shape():
+  #Alias register_shape | addshape
+  pass
+
 def reset():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def resizemode():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def right():
+  #Alias right | rt
+  pass
+
+def rt():
+  #Alias right | rt
   pass
 
 def screen():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def seth():
+  #Alias setheading | seth
+  pass
+
+def setheading():
+  #Alias setheading | seth
+  pass
+
+def setpos():
+  # Will not be implementing.
+  #Alias goto | setpos | setposition
+  pass
+
+def setposition():
+  # Will not be implementing.
+  #Alias goto | setpos | setposition
   pass
 
 def settiltangle():
@@ -180,18 +302,22 @@ def settiltangle():
 def setundobuffer():
   pass
 
+def setup():
+  pass
+
 def setx():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def sety():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def shape():
   pass
 
 def shapesize():
+  #Alias shapesize | turtlesize
   pass
 
 def shapetransform():
@@ -201,10 +327,17 @@ def shearfactor():
   pass
 
 def showturtle():
-  // Not implemented
+  # Will not be implementing.
+  #Alias showturtle | st()
   pass
 
 def speed():
+  # Will not be implementing.
+  pass
+
+def st():
+  # Will not be implementing.
+  #Alias showturtle | st()
   pass
 
 def stamp():
@@ -216,15 +349,28 @@ def tilt():
 def tiltangle():
   pass
 
+def title():
+  pass
+
 def towards():
-  // Not implemented
+  # Will not be implementing.
+  pass
+
+def tracer():
   pass
 
 def turtle():
+  return robot
+
+def turtles():
+  pass
+
+def turtlesize():
+  #Alias shapesize | turtlesize
   pass
 
 def undo():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def undobuffer():
@@ -233,14 +379,32 @@ def undobuffer():
 def undobufferentries():
   pass
 
+def up():
+  #Alias penup | pu | up
+  pass
+
+def update():
+  pass
+
+def width():
+  # Will not be implementing.
+  #Alias pensize | width
+  pass
+
+def window_height():
+  pass
+
+def window_width():
+  pass
+
 def write():
   pass
 
 def xcor():
-  // Not implemented
+  # Will not be implementing.
   pass
 
 def ycor():
-  // Not implemented
+  # Will not be implementing.
   pass
   
