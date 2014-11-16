@@ -2,13 +2,14 @@ from RaspiRobotBoard import *
 
 robot = RaspiRobot()
 
-def Turtle():
-  return robot
-
 def Tortuga():
   return robot
 
 def back():
+  pass
+
+def begin_fill():
+  // Not implemented
   pass
 
 def begin_poly():
@@ -95,7 +96,25 @@ def towards():
 
 def turtle():
   pass
-def undo():
-    // Not implemented
 
-def
+def undo():
+  // Not implemented
+  pass
+
+def undobuffer():
+  pass
+
+def undobufferentries():
+  pass
+
+def write():
+  pass
+
+def xcor():
+  // Not implemented
+  pass
+
+def ycor():
+  // Not implemented
+  pass
+  
