@@ -30,12 +30,21 @@ def bk():
   pass
 
 def bye():
+  # Will not be implementing.
+  pass
+
+def begin_poly():
+  #Already implemented
   pass
 
 def circle():
   pass
 
 def clear():
+  # Will not be implementing.
+  pass
+
+def clearstamps():
   # Will not be implementing.
   pass
 
