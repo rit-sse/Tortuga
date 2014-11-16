@@ -13,3 +13,9 @@ Who are we looking for?
 -------------------
 ANYBODY AND EVERYBODY!  
 This project covers lots of domains, and we can always use more hands! Make your resume all the shinier by working on a most bodacious project!
+
+RaspiRobotBoard Docs:
+https://github.com/simonmonk/raspirobotboard
+
+Python Turtle Docs:
+https://docs.python.org/2.7/library/turtle.html
