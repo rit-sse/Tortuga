@@ -9,22 +9,22 @@ def back():
   pass
 
 def begin_fill():
-  // Not implemented
+  # Not implemented
   pass
 
 def begin_poly():
-  // Already implemented
+  #Already implemented
   pass
 
 def circle():
   pass
 
 def clear():
-  // Not implemented
+  # Not implemented
   pass
 
 def clearstamps():
-  // Not implemented
+  # Not implemented
   pass
   
 def clone():
