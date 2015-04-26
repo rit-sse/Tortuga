@@ -16,129 +16,105 @@ def alias(*aliases):
 def tortuga():
   return _robot
 
-def addshape():
+@alias('register_shape', 'addshape')
+def addshape(name, shape=None):
   #Alias register_shape | addshape
   pass
 
 @alias('backward', 'bk')
-def back():
+def back(distance):
   #Alias back | backward | bk
   pass
 
 def begin_fill():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
 def begin_poly():
   # Already implemented
-  pass
-
-def bk():
-  #Alias back | backward | bk
-  pass
+  pass  
 
 def bye():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
-def begin_poly():
-  #Already implemented
-  pass
-
-def circle():
+def circle(radius, extent=None, steps=None):
   pass
 
 def clear():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
-def clearstamps():
+def clearstamp(stampid):
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
-def clearstamps():
+def clearstamps(n=None):
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
   
 def clone():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
-def color():
+def color(*args):
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
-def colormode():
+def colormode(cmode=None):
   pass
 
 def currentLine():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
 def currentLineItem():
   # Will not be implementing.
   print("Sorry this isn't implemented")
+
+def degrees(fullcircle=360.0):
   pass
 
-def degrees():
-  pass
-
-def distance():
+def distance(x, y=None):
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
+@alias('mainloop')
 def done():
   #Alias mainloop | done
   pass
 
-def dot():
+def dot(size=None, *color):
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
-
-def down():
-  #Alias pendown | pd | down
-  pass
 
 def end_fill():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
 def end_poly():
   # Already implemented
   pass
 
 def exitonclick():
-  pass
-
-def fd():
-  #Alias forward | fd
-  pass
-
-def forward():
-  #Alias forward | fd
-  pass
-
-def fill():
-  #Will not be implementing.
-
-def fillcolor():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
+
+def forward(distance):
+  #Alias forward | fd
   pass
+
+def fill(flag):
+  #Will not be implementing.
+  print("Sorry this isn't implemented.")
+
+def fillcolor(*args):
+  # Will not be implementing.
+  print("Sorry this isn't implemented.")
 
 def Filling():
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
 def get_poly():
   # Already implemented
@@ -151,6 +127,7 @@ def get_shapepoly():
 def getcanvas():
   pass
 
+@alias('getturtle')
 def getpen():
   # Already implemented
   #Alias getturtle | getpen
@@ -158,38 +135,30 @@ def getpen():
 
 def getscreen():
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
 def getshapes():
   pass
 
-def getturtle():
-  # Already implemented
-  #Alias getturtle | getpen
-  pass
-
-def goto():
+@alias('setpo', 'setposition')
+def goto(x, y=None):
   # Will not be implementing.
   #Alias goto | setpos | setposition
-  pass
+  print("Sorry this isn't implemented.")
 
 def heading():
   # Already implemented
   pass
 
+@alias('ht')
 def hideturtle():
   # Will not be implementing.
   #Alias hideturtle | ht
-  pass
+  print("Sorry this isn't implemented.")
 
 def home():
   # Will not be implementing.
-  pass
-
-def ht():
-  # Will not be implementing.
-  #Alias hideturtle | ht
-  pass
+  print("Sorry this isn't implemented.")
 
 def isdown():
   # Already implemented
@@ -198,71 +167,52 @@ def isdown():
 def isvisible():
   # Will not be implementing.
   print("Sorry this isn't implemented")
-  pass
 
-def left():
+@alias("lt")
+def left(angle):
   #Alias left | lt
   pass
 
-def listen():
+def listen(xdummy=None, ydummy=None):
   pass
 
-def lt():
-  #Alias left | lt
+def mode(mode=None):
   pass
 
-def mainloop():
-  #Alias mainloop | done
-  pass
-
-def mode():
-  pass
-
-def onclick():
+@alias("onscreenclick")
+def onclick(fun, btn=1, add=None):
   # Will not be implementing.
   #Alias onclick | onscreenclick
-  pass
+  print("Sorry this isn't implemented.")
 
-def ondrag():
+def ondrag(fun, btn=1, add=None):
   # Will not be implementing.
+  print("Sorry this isn't implemented.")
+
+def onkey(fun, key):
   pass
 
-def onkey():
-  pass
-
-def onrelease():
+def onrelease(fun, btn=1, add=None):
   # Will not be implementing.
+  print("Sorry this isn't implemented.")
+
+def ontimer(fun, t=0):
   pass
 
-def onscreenclick():
+def pen(pen=None, **pendict):
   # Will not be implementing.
-  #Alias onclick | onscreenclick
-  pass
+  print("Sorry this isn't implemented.")
 
-def ontimer():
-  pass
-
-def  pd():
-  #Alias pendown | pd | down
-  pass
-
-def pen():
+def pencolor(*args):
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
-def pencolor():
-  # Will not be implementing.
-  pass
-
+@alias("pd", "down")
 def pendown():
   #Alias pendown | pd | down
   pass
 
-def pensize():
-  # Will not be implementing.
-  #Alias pensize | width
-  pass
-
+@alias("pu", "up")
 def penup():
   #Alias penup | pu | up
   pass
@@ -270,83 +220,54 @@ def penup():
 def pos():
   # Will not be implementing.
   #Alias position | pos
-  pass
-
-def position():
-  # Will not be implementing.
-  #Alias position | pos
-  pass
-
-def pu():
-  #Alias penup | pu | up
-  pass
+  print("Sorry this isn't implemented.")
 
 def radians():
   pass
 
-def register_shape():
-  #Alias register_shape | addshape
-  pass
-
 def reset():
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
-def resizemode():
+def resizemode(rmode=None):
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
-def right():
-  #Alias right | rt
-  pass
-
-def rt():
+@alias("rt")
+def right(angle):
   #Alias right | rt
   pass
 
 def screen():
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
-def seth():
+def seth(to_angle):
   #Alias setheading | seth
   pass
 
-def setheading():
-  #Alias setheading | seth
+def settiltangle(angle):
   pass
 
-def setpos():
+def setundobuffer(size):
+  pass
+
+def setup(width=_CFG["width"], height=_CFG["height"], startx=_CFG["leftright"], starty=_CFG["topbottom"]):
+  pass
+
+def setx(x):
   # Will not be implementing.
-  #Alias goto | setpos | setposition
-  pass
+  print("Sorry this isn't implemented.")
 
-def setposition():
+def sety(y):
   # Will not be implementing.
-  #Alias goto | setpos | setposition
+  print("Sorry this isn't implemented.")
+
+def shape(name=None):
   pass
 
-def settiltangle():
-  pass
-
-def setundobuffer():
-  pass
-
-def setup():
-  pass
-
-def setx():
-  # Will not be implementing.
-  pass
-
-def sety():
-  # Will not be implementing.
-  pass
-
-def shape():
-  pass
-
-def shapesize():
+@alias("turtlesize")
+def shapesize(stretch_wid=None, stretch_len=None, outline=None):
   #Alias shapesize | turtlesize
   pass
 
@@ -356,52 +277,44 @@ def shapetransform():
 def shearfactor():
   pass
 
-def showturtle():
+def speed(speed=None):
   # Will not be implementing.
-  #Alias showturtle | st()
-  pass
+  print("Sorry this isn't implemented.")
 
-def speed():
-  # Will not be implementing.
-  pass
-
+@alias("showturtle")
 def st():
   # Will not be implementing.
   #Alias showturtle | st()
-  pass
+  print("Sorry this isn't implemented.")
 
 def stamp():
   pass
 
-def tilt():
+def tilt(angle):
   pass
 
 def tiltangle():
   pass
 
-def title():
+def title(titlestring):
   pass
 
-def towards():
+def towards(x, y=None):
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
-def tracer():
+def tracer(flag=None, delay=None):
   pass
 
 def turtle():
   return _robot
 
 def turtles():
-  pass
-
-def turtlesize():
-  #Alias shapesize | turtlesize
-  pass
+  return _robot
 
 def undo():
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
 def undobuffer():
   pass
@@ -409,17 +322,14 @@ def undobuffer():
 def undobufferentries():
   pass
 
-def up():
-  #Alias penup | pu | up
-  pass
-
 def update():
   pass
 
-def width():
+@alias("pensize", "width")
+def width(width=None):
   # Will not be implementing.
   #Alias pensize | width
-  pass
+  print("Sorry this isn't implemented.")
 
 def window_height():
   pass
@@ -427,14 +337,13 @@ def window_height():
 def window_width():
   pass
 
-def write():
+def write(arg, move=False, align="left", font=("Arial", 8, "normal")):
   pass
 
 def xcor():
   # Will not be implementing.
-  pass
+  print("Sorry this isn't implemented.")
 
 def ycor():
   # Will not be implementing.
-  pass
-  
+  print("Sorry this isn't implemented.")
