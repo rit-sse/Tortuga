@@ -2,6 +2,12 @@ from RaspiRobotBoard import *
 
 _robot = RaspiRobot()
 
+_VELOCITY = 1
+_TURN_SPEED = 1
+_SETTINGS = {
+  'fullcircle_deg': 360
+}
+
 def alias(*aliases):
   """
   A function to"""
@@ -24,7 +30,7 @@ def addshape(name, shape=None):
 @alias('backward', 'bk')
 def back(distance):
   #Alias back | backward | bk
-  pass
+  _robot.reverse(distance/_VELOCITY)
 
 def begin_fill():
   # Will not be implementing.
@@ -100,9 +106,9 @@ def exitonclick():
   # Will not be implementing.
   print("Sorry this isn't implemented")
 
+@alias("fd")
 def forward(distance):
-  #Alias forward | fd
-  pass
+  _robot.forward(distance/_VELOCITY)
 
 def fill(flag):
   #Will not be implementing.
@@ -170,8 +176,7 @@ def isvisible():
 
 @alias("lt")
 def left(angle):
-  #Alias left | lt
-  pass
+  _robot.left(angle/_TURN_SPEED)
 
 def listen(xdummy=None, ydummy=None):
   pass
@@ -235,8 +240,7 @@ def resizemode(rmode=None):
 
 @alias("rt")
 def right(angle):
-  #Alias right | rt
-  pass
+  _robot.right(angle/_TURN_SPEED)
 
 def screen():
   # Will not be implementing.
@@ -306,10 +310,8 @@ def towards(x, y=None):
 def tracer(flag=None, delay=None):
   pass
 
+@alias('turtles')
 def turtle():
-  return _robot
-
-def turtles():
   return _robot
 
 def undo():
