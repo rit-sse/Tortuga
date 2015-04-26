@@ -1,24 +1,33 @@
 from RaspiRobotBoard import *
 
-robot = RaspiRobot()
+_robot = RaspiRobot()
 
-def Tortuga():
-  return robot
+def alias(*aliases):
+  """
+  A function to"""
+  def wrap(f):
+    import sys
+    module = sys.modules[__name__]
+    for alias in aliases:
+      setattr(module, alias, f)
+    return f
+  return wrap
+
+def tortuga():
+  return _robot
 
 def addshape():
   #Alias register_shape | addshape
   pass
 
+@alias('backward', 'bk')
 def back():
-  #Alias back | backward | bk
-  pass
-
-def backward():
   #Alias back | backward | bk
   pass
 
 def begin_fill():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def begin_poly():
@@ -31,6 +40,7 @@ def bk():
 
 def bye():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def begin_poly():
@@ -42,22 +52,27 @@ def circle():
 
 def clear():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def clearstamps():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def clearstamps():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
   
 def clone():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def color():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def colormode():
@@ -65,10 +80,12 @@ def colormode():
 
 def currentLine():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def currentLineItem():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def degrees():
@@ -76,6 +93,7 @@ def degrees():
 
 def distance():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def done():
@@ -84,6 +102,7 @@ def done():
 
 def dot():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def down():
@@ -92,6 +111,7 @@ def down():
 
 def end_fill():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def end_poly():
@@ -177,6 +197,7 @@ def isdown():
 
 def isvisible():
   # Will not be implementing.
+  print("Sorry this isn't implemented")
   pass
 
 def left():
@@ -369,7 +390,7 @@ def tracer():
   pass
 
 def turtle():
-  return robot
+  return _robot
 
 def turtles():
   pass
